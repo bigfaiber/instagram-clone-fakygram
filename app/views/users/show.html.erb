@@ -1,0 +1,35 @@
+
+<h1 class = 'cabecera'>Hey, this is my profile</h1>
+<div class = 'app__wrapper'>
+    
+    <div class = 'container'>
+        <%=link_to('New Post',new_user_post_path(@user.id))%>
+    </div>
+   
+    
+   
+    
+    <div class = 'post'>
+        <% @posts.each do |p|%>
+            <img src="<%=p.image_url%>" class='imagen'>
+            <%if current_user.id == @user.id%>
+                <%=link_to('Delete Post',user_post_path(@user.id, p.id),method: :delete)%>
+            <%end%>
+        <%end%>
+    </div>
+
+
+    <div class = 'amigos'>
+        <p>
+            Amigos
+        </p>
+        <ul>
+            <% @users.each do |u|%>
+                <li>
+                    <%=link_to(u.email,user_path(u.id))%>
+                </li>
+            <%end%>
+        </ul>
+
+    </div>
+</div>

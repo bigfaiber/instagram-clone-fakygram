@@ -1,0 +1,48 @@
+.navbar-link{
+    color: lightcyan;
+}
+.cabecera{
+    background: rgb(27, 27, 201);
+    margin: 0%;
+    color: rgb(243, 234, 234);
+}
+.navbar-text_pull-right{
+    background: rgb(27, 27, 201);
+    margin: 0%;
+    color: white;
+}
+
+.app__wrapper{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    background: rgb(235, 255, 255);
+}
+
+.post{
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 50%;
+}
+
+.amigos{
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    background: rgb(228, 236, 238);
+    height: 40%;
+    
+}
+
+
+
+.imagen{
+    margin: 1%;
+    padding: 2%;
+    width: 100%;
+    border: 1px solid gray;
+}
